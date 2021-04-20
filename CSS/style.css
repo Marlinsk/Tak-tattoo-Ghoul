@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background body color */
+body {
+  background: #1e1e1e;
+}
+
+header {
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 18.5px;
+  background-color: #000;
+}
+
+.buttonIcon {
+  margin: 100px 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonIcon li a svg {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+}
+
+.buttonIcon li a p {
+  font-family: "Montserrat", sans-serif;
+  color: #ffff;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.buttonIcon li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonIcon > li {
+  padding: 100px 44px 2px 44px;
+}
+
+.buttonIcon li a:hover svg {
+  fill: #ff0048;
+}
+
+.buttonIcon li a:hover p {
+  padding-bottom: 0px;
+}
+
+/* Layout grid zone */
+
+.results {
+  /* fit in up to 5 columns of 180px wide tiles, 20px gutters: 5*180 + 4*20: */
+  max-width: 2560px; /*980px*/
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  /* fit as many columns as possible, 180px wide each: */
+  grid-template-columns: repeat(auto-fill, 360px); /* original scale = 180px */
+  /* each row is 20px high -- we always span 2+ */
+  grid-auto-rows: minmax(20px, auto);
+  justify-content: center;
+}
+
+.results > * {
+  width: 360px;
+  /* only for older non-grid browsers: */
+  float: left;
+  /* only for older non-grid browsers: */
+  margin: 15px;
+}
+
+.results div {
+  max-height: 500px;
+}
+
+.results div img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.ht0 {
+  grid-row-end: span 2;
+}
+.ht1 {
+  grid-row-end: span 3;
+}
+.ht2 {
+  grid-row-end: span 4;
+}
+/*
+.ht3 {
+  grid-row-end: span 5;
+}
+.ht4 {
+  grid-row-end: span 6;
+}
+.ht5 {
+  grid-row-end: span 7;
+}
+.ht6 {
+  grid-row-end: span 8;
+}
+.ht7 {
+  grid-row-end: span 9;
+}
+*/
+@supports (display: grid) {
+  .results > * {
+    /* modern browser -- grid-gap takes care of us: */
+    margin: 0 auto;
+  }
+}
+
+/* cosmetics only from here on down */
+.results > * {
+  background-color: #ddd;
+}
+.results > * img {
+  max-width: 100%;
+}
+
+.results div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.results div img,
+.results div {
+  border-radius: 6px;
+}
