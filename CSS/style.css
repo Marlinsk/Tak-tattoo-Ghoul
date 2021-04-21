@@ -24,18 +24,101 @@ header {
   background-color: #000;
 }
 
+.navMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .buttonIcon {
   margin: 100px 0px;
   padding: 0px;
   list-style: none;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  min-height: 200px;
+  flex-direction: column;
+}
+
+
+.buttonIcon .div-input {
+  width: 60%;
+  animation: input-animation 1s ease-in-out;
+  display: none;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px
+}
+
+.buttonIcon .div-input > button {
+  height: 35px;
+  border-radius: 0px;
+  width: 35px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0048;
+  cursor: pointer;
+}
+
+.buttonIcon .div-input > button:nth-child(1) {
+  border-bottom-left-radius: 4px;
+}
+
+.buttonIcon .div-input button:nth-child(3) {
+  border-top-right-radius: 4px;
+}
+
+.buttonIcon .div-input > button:hover {
+  background-color: #ff0048ad;
+}
+
+.buttonIcon .div-input > button img{ 
+  height: 20px;
+  width: 20px;
+}
+
+.buttonIcon .div-input input {
+  animation: input-animation 1s ease-in-out;
+  height: 35px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  width: 70%;
+}
+
+@keyframes input-animation {
+  from {
+    opacity: 0;
+    top: 150px;
+    width: 0px;
+  }
+  to {
+    opacity: 1;
+    width: 60%;
+    top: 10px;
+  }
+}
+
+.ul-li {
+  display: flex;
+  max-width: 600px;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .buttonIcon li a svg {
   width: 35px;
   height: 35px;
   fill: #fff;
+  cursor: pointer;
 }
 
 .buttonIcon li a p {
@@ -43,6 +126,24 @@ header {
   color: #ffff;
   text-align: center;
   margin-top: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.buttonIcon li a p::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #ff0048;
+  bottom: -4px;
+  transition: all ease 2s;
+}
+
+.buttonIcon li:hover a p::after {
+  width: 100%;
 }
 
 .buttonIcon li a {
@@ -53,7 +154,12 @@ header {
 }
 
 .buttonIcon > li {
-  padding: 100px 44px 2px 44px;
+  width: 10%;
+  max-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
 }
 
 .buttonIcon li a:hover svg {
@@ -68,82 +174,80 @@ header {
 
 .results {
   /* fit in up to 5 columns of 180px wide tiles, 20px gutters: 5*180 + 4*20: */
-  max-width: 2560px; /*980px*/
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 20px;
-  /* fit as many columns as possible, 180px wide each: */
-  grid-template-columns: repeat(auto-fill, 360px); /* original scale = 180px */
-  /* each row is 20px high -- we always span 2+ */
-  grid-auto-rows: minmax(20px, auto);
-  justify-content: center;
+ max-width: 980px;
+ margin: 0 auto;
+ display: grid;
+ grid-gap: 20px;
+ /* fit as many columns as possible, 180px wide each: */
+ grid-template-columns: repeat(auto-fill, 180px);
+ /* each row is 20px high -- we always span 2+ */
+ grid-auto-rows: minmax(20px, auto);
+ justify-content: center;	
 }
 
 .results > * {
-  width: 360px;
-  /* only for older non-grid browsers: */
-  float: left;
-  /* only for older non-grid browsers: */
-  margin: 15px;
+ width: 180px;
+ /* only for older non-grid browsers: */
+ float: left;  
+ /* only for older non-grid browsers: */
+ margin: 15px;
 }
 
-.results div {
-  max-height: 500px;
-}
+.ht0 { grid-row-end: span 2; }
+.ht1 { grid-row-end: span 3; }
+.ht2 { grid-row-end: span 4; }
+.ht3 { grid-row-end: span 5; }
+.ht4 { grid-row-end: span 6; }
+.ht5 { grid-row-end: span 7; }
+.ht6 { grid-row-end: span 8; }
+.ht7 { grid-row-end: span 9; }
 
-.results div img {
-  max-height: 500px;
-  object-fit: cover;
-}
-
-.ht0 {
-  grid-row-end: span 2;
-}
-.ht1 {
-  grid-row-end: span 3;
-}
-.ht2 {
-  grid-row-end: span 4;
-}
-/*
-.ht3 {
-  grid-row-end: span 5;
-}
-.ht4 {
-  grid-row-end: span 6;
-}
-.ht5 {
-  grid-row-end: span 7;
-}
-.ht6 {
-  grid-row-end: span 8;
-}
-.ht7 {
-  grid-row-end: span 9;
-}
-*/
 @supports (display: grid) {
-  .results > * {
-    /* modern browser -- grid-gap takes care of us: */
-    margin: 0 auto;
-  }
+ .results > * {
+   /* modern browser -- grid-gap takes care of us: */
+   margin: 0 auto;
+ }
 }
 
 /* cosmetics only from here on down */
 .results > * {
-  background-color: #ddd;
+ background-color: #ddd;
 }
-.results > * img {
-  max-width: 100%;
+
+.results div {
+ border-radius: 6px;
 }
 
 .results div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+ width: 100%;
+ min-height: 100%;
+ object-fit: cover;
+ border-radius: 6px;
 }
 
-.results div img,
-.results div {
-  border-radius: 6px;
+.results > * span {
+ font-size: 125%;
+ color: #cc3333;
+ font-family: 'Ultra';
+}
+
+@media(max-width: 600px){
+  .buttonIcon .div-input button{
+    width: 50px;
+  }
+  .buttonIcon .div-input input {
+    width: 300px;
+  }
+  .buttonIcon .div-input {
+    width: 100%;
+  }
+  .ul-li {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .buttonIcon > li {
+    width: 10%;
+    max-width: 120px;
+  }
 }
