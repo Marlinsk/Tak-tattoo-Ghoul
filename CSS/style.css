@@ -40,8 +40,20 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  margin-left: 80rem;
+  margin-left: 77.68rem;
   font-size: 16.5px;
+}
+
+.conect svg{
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-right: 0.3rem;
+  fill: #fff;
+}
+
+.conect:hover svg{
+  fill: #ff0048;
 }
 
 .navMenu {
