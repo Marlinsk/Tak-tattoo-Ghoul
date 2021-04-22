@@ -8,3 +8,4 @@ search.addEventListener('click', () => {
 function closeInputSearch() {
     input.style.display = 'none';
 }
+
