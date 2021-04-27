@@ -39,6 +39,7 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   margin-left: 77.68rem;
   font-size: 16.5px;
