@@ -29,7 +29,7 @@ header {
   justify-content: center;
   align-items: center;
   font-family: "Bebas Neue", cursive;
-  margin-left: 2rem;
+  margin-left: 28px;
   font-size: 18.5px; 
 }
 
@@ -40,7 +40,7 @@ header {
   align-items: center;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  margin-left: 77.68rem;
+  margin-left: 1250px;
   font-size: 16.5px;
 }
 
@@ -48,7 +48,7 @@ header {
   display: flex;
   width: 25px;
   height: 25px;
-  margin-right: 0.3rem;
+  margin-right: 5px;
   fill: #fff;
 }
 
