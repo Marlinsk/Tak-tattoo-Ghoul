@@ -98,4 +98,25 @@ header {
     padding: 115px 85px 0px 85px;
 }
 
+/* section */
+
+.layout-grid {
+  padding-top: 83px;
+  max-width: 1280px;
+  margin: 0 auto;
+  column-count: 5;
+}
+
+.img-content {
+  border-radius: 16px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+
 
