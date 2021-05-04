@@ -103,6 +103,25 @@ header {
   cursor: pointer;
 }
 
+.navMenu li p {
+  position: absolute;
+}
+
+.navMenu li p::after {
+  content: "";
+  background-color: #ff0048;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  transition: all ease-in 1s;
+}
+
+.navMenu li:hover p::after {
+  width: 100%;
+}
+
 /* section */
 
 .layout-grid {
