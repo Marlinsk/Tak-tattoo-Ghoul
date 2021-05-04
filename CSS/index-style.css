@@ -21,6 +21,8 @@ header {
 
 .navBar {
   display: flex; 
+  width: 100%;
+  justify-content: space-between;
 }
 
 .logo{
@@ -40,9 +42,29 @@ header {
   align-items: center;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  margin-left: 1250px;
   font-size: 16.5px;
+  margin-right: 20px;
 }
+
+.conect p {
+  position: relative;
+}
+
+.conect p::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  width: 0;
+  left: 1px;
+  height: 3px;
+  background-color: #ff0048;
+  border-radius: 5px;
+  transition: all ease-in 1s;
+}
+
+.conect:hover p::after {
+  width: 100%;
+} 
 
 .conect svg{
   display: flex;
@@ -131,6 +153,18 @@ header {
   width: 70%;
 }
 
+.search-category {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  height: 35px;
+  border-radius: 1px;
+  border: none;
+  padding: 0 20px 0 0;
+  background: #ff0048 url('https://img.flaticon.com/icons/png/512/271/271210.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=0000') 95% no-repeat;
+  background-size: 18px;
+}
+
 @keyframes input-animation {
   from {
     opacity: 0;
@@ -209,6 +243,12 @@ header {
 
 /* button filter */
 
+.btn-filter {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
 .btn-filter button{
   width: 50px;
   height: 50px;
@@ -217,7 +257,6 @@ header {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 10px;
-  margin-left: 269px;
   margin-top: auto;
 }
 
@@ -239,7 +278,7 @@ button svg{
 
 .results {
   /* fit in up to 5 columns of 180px wide tiles, 20px gutters: 5*180 + 4*20: */
- max-width: 980px;
+ max-width: 80%;
  margin: 0 auto;
  display: grid;
  grid-gap: 20px;
