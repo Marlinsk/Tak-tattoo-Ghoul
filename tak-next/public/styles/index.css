@@ -66,7 +66,7 @@ header {
   width: 100%;
 } 
 
-.conect svg{
+.conect img{
   display: flex;
   width: 25px;
   height: 25px;
@@ -74,7 +74,7 @@ header {
   fill: #fff;
 }
 
-.conect:hover svg{
+.conect:hover img{
   fill: #ff0048;
 }
 
@@ -85,7 +85,7 @@ header {
   width: 100%;
 }
 
-.navMenu ul div button svg{
+.navMenu ul div button img{
   width: 15px;
   height: 15px;  
   fill: #fff;
@@ -185,18 +185,19 @@ header {
   width: 50%;
 }
 
-.buttonIcon li a svg {
-  width: 35px;
-  height: 35px;
+.buttonIcon li a img {
+  width: 32px;
+  height: 32px;
   fill: #fff;
   cursor: pointer;
 }
 
 .buttonIcon li a p {
   font-family: "Montserrat", sans-serif;
+  font-size: 12px;
   color: #ffff;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 6px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -218,6 +219,10 @@ header {
 }
 
 .buttonIcon li a {
+  width: 82px;
+  height: 82px;
+  background-color: #4A4A48;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +238,7 @@ header {
   cursor: pointer;
 }
 
-.buttonIcon li a:hover svg {
+.buttonIcon li a:hover img {
   fill: #ff0048;
 }
 
@@ -264,7 +269,7 @@ button:hover{
   filter: brightness(0.95);
 }
 
-button svg{
+button img{
   width: 37px;
   height: 37px;
   display: flex;
