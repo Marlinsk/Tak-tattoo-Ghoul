@@ -7,6 +7,7 @@
 }
 
 /* Background body color */
+
 body {
   background: #1e1e1e;
 }
@@ -95,6 +96,37 @@ header {
   fill: #fff;
 }
 
+/* btn-search */
+
+.buttonIcon .search-input {
+  width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+}
+
+.search-input input{
+  height: 44px;
+  width: 520px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0 60px 0 20px;
+  color: #ffff;
+  font-size: 14px;
+  background: #4A4A48;
+}
+
+.search-input img{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin-left: 480px;
+  cursor: pointer;
+}
+
 /* div ul-li area */
 
 .ul-li {
@@ -116,7 +148,6 @@ header {
   align-items: center;
   width: 100%;
   position: relative;
-  min-height: 200px;
   flex-direction: column;
 }
 
@@ -221,7 +252,6 @@ header {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 10px;
-  margin-top: auto;
 }
 
 button:hover{
@@ -236,6 +266,12 @@ button img{
   justify-content: center;
   margin: 0 auto;
   fill: #ffff;
+}
+
+@media (max-width: 800px){
+   .btn-filter{
+     margin: 0 0px;
+   }
 }
 
 /* layout-grid area */
@@ -257,4 +293,9 @@ img{
   max-width: 100%;
 }
 
-
+@media (max-width: 800px){
+  .layout-grid{
+    max-width: 600px;
+    column-count: 3;
+  }
+}

@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
+
     return (
         <>
             <Head>
@@ -21,11 +22,15 @@ export default function Home() {
                     </a>
                 </nav>
             </header>
-             
-            <div></div>
 
             <nav className="navMenu">
-                <ul className="buttonIcon"> 
+                <ul className="buttonIcon">
+                    
+                    <div className="search-input">
+                        <input type="text" placeholder="Digite"/>
+                        <img src="/icon/lupa.svg" alt="lupa" />
+                    </div>
+                     
                     <div className="ul-li">
                         <li>
                             <a>
@@ -58,74 +63,86 @@ export default function Home() {
                             </a>
                         </li>
                     </div>
+
                 </ul>
             </nav>
 
-            <div className="btn-filter">
-                <button type="button">
-                    <img src="/icon/filter-filled-tool-symbol.svg" alt="filtro" />
-                </button>
+            <div>
+
+                <div className="btn-filter">
+                    <button type="button">
+                        <img src="/icon/filter-filled-tool-symbol.svg" alt="filtro" />
+                    </button>
+                </div>
+
+                <div>
+                    <section className="layout-grid">
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/egyptian/7712971313e244c0f0672824d3acc182.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/angels/980acb3243ec7b1d61d7c967c9649432.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/angels/36bde2d8e4ccb9e4d5477f6c4f39b3ff.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/egyptian/b96bc38958a94283fed7bf8b01e81078.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/angels/51e0e04943d40670872d7d3a6cba5a44.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/gothic/d8842b380d2d6652e3d01516bdd503fd.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/animal/170080334ee740aee275cecd356020c0.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/geometric/61977c2507788c80d6d0a355894eef5f.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/eyes/2294346cf8823f9ee5c7346012a6befb.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/eyes/7e72b0c8e35e3aea4f924926a28f4b3b.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/geometric/e95e5a0f2bcaf4d9759a5d544741dbf7.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/science/5d0020f0571527960babe6a6ed9a8c02.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/surrealist/35ab76c681bcc9a56f9d0d87148b9889.jpg" />
+                        </div>
+
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/angels/5281177fab08489472d1c5eeeb51c540.jpg" />
+                        </div>
+
+                    </section>
+                </div>
             </div>
 
-            <section className="layout-grid">
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/egyptian/7712971313e244c0f0672824d3acc182.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/angels/980acb3243ec7b1d61d7c967c9649432.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/angels/36bde2d8e4ccb9e4d5477f6c4f39b3ff.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/egyptian/b96bc38958a94283fed7bf8b01e81078.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/angels/51e0e04943d40670872d7d3a6cba5a44.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/gothic/d8842b380d2d6652e3d01516bdd503fd.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/animal/170080334ee740aee275cecd356020c0.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/geometric/61977c2507788c80d6d0a355894eef5f.jpg" />
-                </div>
+            <div id="modal-cadastro" className="modal-container">
+                <div className="modal">
                 
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/eyes/2294346cf8823f9ee5c7346012a6befb.jpg" />
                 </div>
-                
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/eyes/7e72b0c8e35e3aea4f924926a28f4b3b.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/geometric/e95e5a0f2bcaf4d9759a5d544741dbf7.jpg" />
-                </div>
-                
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/science/5d0020f0571527960babe6a6ed9a8c02.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/surrealist/35ab76c681bcc9a56f9d0d87148b9889.jpg" />
-                </div>
-
-                <div className="img-content">
-                    <img src="/images/image-tattoo/category/angels/5281177fab08489472d1c5eeeb51c540.jpg" />
-                </div>
-
-            </section>
+            </div>
 
         </>
     )
