@@ -7,6 +7,7 @@
 }
 
 /* Background body color */
+
 body {
   background: #1e1e1e;
 }
@@ -34,6 +35,8 @@ header {
   margin-left: 28px;
   font-size: 18.5px; 
 }
+
+/* conect button area */
 
 .conect{
   display: flex;
@@ -78,6 +81,8 @@ header {
   fill: #ff0048;
 }
 
+/* navMenu area */
+
 .navMenu {
   display: flex;
   align-items: center;
@@ -91,98 +96,59 @@ header {
   fill: #fff;
 }
 
-.buttonIcon {
-  margin: 100px 0px;
-  padding: 0px;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  min-height: 200px;
-  flex-direction: column;
-}
+/* btn-search */
 
-.buttonIcon .div-input {
-  width: 60%;
-  animation: input-animation 1s ease-in-out;
-  display: none;
+.buttonIcon .search-input {
+  width: 520px;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 10px
+  top: 16px;
 }
 
-.buttonIcon .div-input > button {
-  height: 35px;
-  border-radius: 0px;
-  width: 35px;
-  border: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff0048;
+.search-input input{
+  height: 44px;
+  width: 520px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0 60px 0 20px;
+  color: #ffff;
+  font-size: 14px;
+  background: #4A4A48;
+}
+
+.search-input img{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  margin-left: 480px;
   cursor: pointer;
 }
 
-.buttonIcon .div-input > button:nth-child(1) {
-  border-bottom-left-radius: 4px;
-}
-
-.buttonIcon .div-input button:nth-child(3) {
-  border-top-right-radius: 4px;
-}
-
-.buttonIcon .div-input > button:hover {
-  background-color: #ff0048ad;
-}
-
-.buttonIcon .div-input > button img{ 
-  height: 20px;
-  width: 20px;
-}
-
-.buttonIcon .div-input input {
-  animation: input-animation 1s ease-in-out;
-  height: 35px;
-  border-radius: 0px;
-  border: none;
-  outline: none;
-  padding-left: 20px;
-  width: 70%;
-}
-
-.search-category {
-  -webkit-appearance: none;
-  -moz-appearance:    none;
-  appearance:         none;
-  height: 35px;
-  border-radius: 1px;
-  border: none;
-  padding: 0 20px 0 0;
-  background: #ff0048 url('https://img.flaticon.com/icons/png/512/271/271210.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=0000') 95% no-repeat;
-  background-size: 18px;
-}
-
-@keyframes input-animation {
-  from {
-    opacity: 0;
-    top: 150px;
-    width: 0px;
-  }
-  to {
-    opacity: 1;
-    width: 60%;
-    top: 10px;
-  }
-}
+/* div ul-li area */
 
 .ul-li {
   display: flex;
   max-width: 600px;
   justify-content: space-around;
   width: 50%;
+}
+
+/* buttonIcon area */
+
+.buttonIcon {
+  margin: 100px 0px;
+  padding: 0px;
+  padding-top: 100px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
 }
 
 .buttonIcon li a img {
@@ -246,12 +212,36 @@ header {
   padding-bottom: 0px;
 }
 
-/* button filter */
+/* responsiveness of buttonIcon */
+
+@media(max-width: 600px){
+  .ul-li {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .buttonIcon .div-input button{
+    width: 50px;
+  }
+  .buttonIcon .div-input input {
+    width: 300px;
+  }
+  .buttonIcon .div-input {
+    width: 100%;
+  }
+  .buttonIcon > li {
+    width: 10%;
+    max-width: 120px;
+  }
+}
+
+/* btn-filter area */
 
 .btn-filter {
   display: flex;
-  width: 75%;
+  width: 84%;
   margin: 0 auto;
+  padding: auto;
 }
 
 .btn-filter button{
@@ -262,7 +252,6 @@ header {
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 10px;
-  margin-top: auto;
 }
 
 button:hover{
@@ -270,8 +259,8 @@ button:hover{
 }
 
 button img{
-  width: 37px;
-  height: 37px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,84 +268,34 @@ button img{
   fill: #ffff;
 }
 
-/* Layout grid zone */
-
-.results {
-  /* fit in up to 5 columns of 180px wide tiles, 20px gutters: 5*180 + 4*20: */
- max-width: 80%;
- margin: 0 auto;
- display: grid;
- grid-gap: 20px;
- /* fit as many columns as possible, 180px wide each: */
- grid-template-columns: repeat(auto-fill, 180px);
- /* each row is 20px high -- we always span 2+ */
- grid-auto-rows: minmax(20px, auto);
- justify-content: center;	
+@media (max-width: 800px){
+   .btn-filter{
+     margin: 0 0px;
+   }
 }
 
-.results > * {
- width: 180px;
- /* only for older non-grid browsers: */
- float: left;  
- /* only for older non-grid browsers: */
- margin: 15px;
+/* layout-grid area */
+
+.layout-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  column-count: 6;
 }
 
-.ht0 { grid-row-end: span 2; }
-.ht1 { grid-row-end: span 3; }
-.ht2 { grid-row-end: span 4; }
-.ht3 { grid-row-end: span 5; }
-.ht4 { grid-row-end: span 6; }
-.ht5 { grid-row-end: span 7; }
-.ht6 { grid-row-end: span 8; }
-.ht7 { grid-row-end: span 9; }
-
-@supports (display: grid) {
- .results > * {
-   /* modern browser -- grid-gap takes care of us: */
-   margin: 0 auto;
- }
+.img-content {
+  border-radius: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
 }
 
-/* cosmetics only from here on down */
-.results > * {
- background-color: #ddd;
+img{
+  display: block;
+  max-width: 100%;
 }
 
-.results div {
- border-radius: 6px;
-}
-
-.results div img {
- width: 100%;
- min-height: 100%;
- object-fit: cover;
- border-radius: 6px;
-}
-
-.results > * span {
- font-size: 125%;
- color: #cc3333;
- font-family: 'Ultra';
-}
-
-@media(max-width: 600px){
-  .buttonIcon .div-input button{
-    width: 50px;
-  }
-  .buttonIcon .div-input input {
-    width: 300px;
-  }
-  .buttonIcon .div-input {
-    width: 100%;
-  }
-  .ul-li {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .buttonIcon > li {
-    width: 10%;
-    max-width: 120px;
+@media (max-width: 800px){
+  .layout-grid{
+    max-width: 600px;
+    column-count: 3;
   }
 }
