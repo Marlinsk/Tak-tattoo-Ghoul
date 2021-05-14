@@ -133,6 +133,9 @@ export default function Home() {
                         <div className="img-content">
                             <img src="/images/image-tattoo/category/angels/5281177fab08489472d1c5eeeb51c540.jpg" />
                         </div>
+                        <div className="img-content">
+                            <img src="/images/image-tattoo/category/geometric/eb799888e1b722e3b3c0ccdce8374fdd.jpg" />
+                        </div>
 
                     </section>
                 </div>
