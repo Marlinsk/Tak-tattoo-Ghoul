@@ -41,7 +41,6 @@ export default function Home() {
                     <a className="conect">
                         <p>Conectar</p>
                     </a>
-                    <input type="text"/>
                 </nav>
             </header>
 
