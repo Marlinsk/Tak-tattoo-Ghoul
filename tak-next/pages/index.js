@@ -5,19 +5,20 @@ export default function Home() {
     return (
         <>
             <Head>
-                <meta charset="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Tak Ghoul</title>
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Neue&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet"/>
                 <link rel="stylesheet" href="/styles/index.css" type="text/css" media="all" />
             </Head>
 
             <header>
                 <nav className="navBar">
-                    <logo className="logo">Tak Tattoo Ghoul</logo>
+                    <logo className="logo">
+                        <img src="/images/logo/Logo 2 dragão branca sem fundo.png" alt="logo" />
+                    </logo>
                     <a className="conect">
                         <p>Conectar</p>
                     </a>
@@ -69,7 +70,6 @@ export default function Home() {
             </nav>
 
             <div>
-
                 <div className="btn-filter">
                     <button type="button">
                         <img src="/icon/filter-filled-tool-symbol.svg" alt="filtro" />
@@ -145,19 +145,21 @@ export default function Home() {
             <div id="modal-conectar" className="modal-container">
                 <div className="modal">
                     <button className="close-login">x</button>
-                    <h3>Login</h3>
+                    <h4 className="frase-login">Conecte-se ao universo</h4>
+                    <img className="logo-title" src="/images/logo/Logo 2 dragão sem fundo.png" alt="" />
                     <form action="">
                         <div>
-                            <label for="email">Email</label><br/>
-                            <input type="text" className="input-email-login" placeholder="Email" />
+                            <label className="label-email-login" for="email">Email</label><br/>
+                            <input type="text" className="input-email-login"/>
                         </div>
                         <div>
-                            <label for="senha">Senha</label><br/>
-                            <input type="text" className="input-password-login" placeholder="Senha" />
+                            <label className="label-senha-login" for="senha">Senha</label><br/>
+                            <input type="text" className="input-password-login"/>
                         </div>
-                        <p>Esqueçeu a senha?</p><a href="">Recuperar senha</a><br/>
-                        <button type="submit">Conectar</button>
                     </form>
+                    <p className="link-recupera-senha">Esqueçeu sua senha?<a href="">Recupere-a</a></p><br/>
+                    <button className="btn-conectar-login" type="submit">Conectar</button>
+                    <p className="link-criar-conta">Não tem uma conta?<a href="">Crie uma!</a></p><br/>
                 </div>
             </div>
         </>
