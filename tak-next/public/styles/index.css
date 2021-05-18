@@ -72,18 +72,6 @@ header {
   width: 100%;
 } 
 
-.conect img{
-  display: flex;
-  width: 25px;
-  height: 25px;
-  margin-right: 5px;
-  fill: #fff;
-}
-
-.conect:hover img{
-  fill: #ff0048;
-}
-
 /* navMenu area */
 
 .navMenu {
@@ -173,20 +161,6 @@ header {
   cursor: pointer;
 }
 
-.buttonIcon li a p::after {
-  position: absolute;
-  content: '';
-  width: 0;
-  height: 2px;
-  background-color: #ff0048;
-  bottom: -4px;
-  transition: all ease 2s;
-}
-
-.buttonIcon li:hover a p::after {
-  width: 100%;
-}
-
 .buttonIcon li a {
   width: 82px;
   height: 82px;
@@ -196,23 +170,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.buttonIcon > li {
-  width: 10%;
-  max-width: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-}
-
-.buttonIcon li a:hover img {
-  fill: #ff0048;
-}
-
-.buttonIcon li a:hover p {
-  padding-bottom: 0px;
 }
 
 /* responsiveness of buttonIcon */
