@@ -25,13 +25,16 @@ export default function Home() {
             <Head>
                 <link rel="icon" href="/images/logo/Icone branco sem fundo.png" />
                 <title>Tak Ghoul</title>
+                
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Neue&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
-                <link rel="stylesheet" href="/styles/index.css" type="text/css" media="all" />
-                <link rel="stylesheet" href="/styles/media.css" type="text/css" media="all" />
+                
+                <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
+                <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
+                <link rel="stylesheet" href="/styles/modal.css" type="text/css" media="all" />
             </Head>
 
             <body>
@@ -41,15 +44,19 @@ export default function Home() {
                             <div className="logo">
                                 <img src="/images/logo/Logo 2 dragão branca sem fundo.png" alt="logo" width="98" height="53" />
                             </div>
-                            <div>
-                                <input className="searchBar" type="text" />
+                            <div className="search-box">
+                                <input className="search-bar" type="text" placeholder="Localidade" />
+                                <a className="btn-location" href="">
+                                    <img src="/icon/cursor.svg" alt="location-icon" />
+                                </a>
+                                <a className="btn-down-list" href="">
+                                    <img src="/icon/arrow-down-sign-to-navigate.svg" alt="dopdown-arrow-btn" />
+                                </a>
                             </div>
-                        </div>
-                        
+                        </div>                 
                         <ul>
                             <li><a>Início</a></li>
                             <li><a>Estilos</a></li>
-                            <li><a>Ideias</a></li>
                             <li><a>Explorar</a></li>
                             <li><a>Conectar</a></li>
                         </ul>

@@ -5,32 +5,6 @@
   box-sizing: border-box;
 }
 
-/* layout-grid area */
-
-.layout-grid {
-  max-width: 1280px;
-  margin: 0 auto;
-  column-count: 6;
-}
-
-.img-content {
-  border-radius: 12px;
-  margin-bottom: 16px;
-  overflow: hidden;
-}
-
-img{
-  display: block;
-  max-width: 100%;
-}
-
-@media (max-width: 800px){
-  .layout-grid{
-    max-width: 600px;
-    column-count: 3;
-  }
-}
-
 /* horizontal carrossel scroll */
 
 .container-box {
@@ -59,4 +33,30 @@ img{
     height: 120px;
     width: 180px;
     border-radius: 12px;
+}
+
+/* layout-grid area */
+
+.layout-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  column-count: 6;
+}
+
+.img-content {
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 800px){
+  .layout-grid{
+    max-width: 600px;
+    column-count: 3;
+  }
 }
