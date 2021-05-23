@@ -7,14 +7,21 @@
 
 /* horizontal carrossel scroll */
 
+.subtitle1{
+  width: 1280px;
+  display: flex;
+  color: #ffff;
+  margin: 15px auto;
+}
+
 .container-box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 1280px;
+    
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 200px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
@@ -29,7 +36,7 @@
 .container-box .box {
     scroll-snap-align: start;
     background-color: #ff0048;
-    margin: 10px;
+    margin: 0 10px;
     height: 120px;
     width: 180px;
     border-radius: 12px;
@@ -44,15 +51,41 @@
 }
 
 .img-content {
-  border-radius: 12px;
   margin-bottom: 16px;
   overflow: hidden;
+  break-inside: avoid-column;
 }
 
 img{
   display: block;
+  border-radius: 12px;
   max-width: 100%;
 }
+
+.Feed{
+  padding: 10px;
+  width: 100%;
+  height: 36px;
+  display: flex;
+}
+
+.Feed foto{
+  width: 26px;
+  height: 26px; 
+  border-radius: 50%;
+  background-color: #ff0048;
+}
+
+.Feed p{
+  width: 150px;
+  padding-top: 5px;
+  padding-left: 8px;
+  color: #ffff;
+  font-size: 12.5px;
+  font-family: "Montserrat";
+}
+
+
 
 @media (max-width: 800px){
   .layout-grid{
