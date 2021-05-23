@@ -55,23 +55,11 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
 
-<<<<<<< HEAD
-            <header>
-                <nav className="navBar">
-                    <logo className="logo">
-                        <img src="/images/logo/Logo 2 dragão branca sem fundo.png" alt="logo" />
-                    </logo>
-                    <a className="conect">
-                        <p>Conectar</p>
-                    </a>
-                </nav>
-            </header>
-=======
                 <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/modal.css" type="text/css" media="all" />
             </Head>
->>>>>>> 0273c94a4e29879b08a22459d11b79a1aad21093
+
 
             <body>
                 <header>
@@ -98,7 +86,9 @@ export default function Home() {
                         </ul>
                     </nav>
                 </header>
+                
                 <br /><br />
+                
                 <h3 className="subtitle1"> Estúdios populares em . . . </h3>
                 <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
                     <div class="boxes">
@@ -120,7 +110,9 @@ export default function Home() {
                         <div class="box"></div>
                     </div>
                 </div>
+                
                 <br /><br />
+                
                 <h3 className="subtitle1"> Postagens de tattoo recentes em . . . </h3>
                 <div>
                     <section className="layout-grid">
