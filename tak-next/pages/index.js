@@ -1,7 +1,28 @@
 import Head from 'next/head';
+import React, { useRef } from 'react';
+
+/*
+var containexBox = document.querySelector('.container-box');
+
+containexBox.addEventListener("wheel", function (e) {
+    if (e.deltaY > 0) containexBox.scrollLeft += 400;
+    else containexBox.scrollLeft -= 400;
+});*/
 
 export default function Home() {
 
+    var containerBox = useRef(null);
+
+    function rolagem(e) {
+        if (e.deltaY > 0) {
+            containerBox.current.scrollLeft += 400;
+        }
+        else {
+            containerBox.current.scrollLeft -= 400;
+            console.log(containerBox);
+        }
+    }
+    
     var imageList = [
         "/images/image-tattoo/category/egyptian/7712971313e244c0f0672824d3acc182.jpg",
         "/images/image-tattoo/category/angels/980acb3243ec7b1d61d7c967c9649432.jpg",
@@ -62,8 +83,9 @@ export default function Home() {
                         </ul>
                     </nav>
                 </header>
-                <br/><br/>
-                <div class="container-box">    
+                <br /><br />
+                <h3 className="subtitle1"> Estúdios populares em </h3>
+                <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
                     <div class="boxes">
                         <div class="box"></div>
                         <div class="box"></div>
@@ -83,13 +105,18 @@ export default function Home() {
                         <div class="box"></div>
                     </div>
                 </div>
-                <br/><br/>
+                <br /><br />
+                <h3 className="subtitle1"> Estúdios populares em </h3>
                 <div>
                     <section className="layout-grid">
                         {imageList.map((item, key) => {
                             return (
                                 <div className="img-content" key={key}>
                                     <img src={item} />
+                                    <div className="Feed">
+                                        <foto/>
+                                        <p href="">Fulano Studio</p>
+                                    </div>
                                 </div>
                             )
                         })}
