@@ -132,8 +132,8 @@ export default function Home() {
                         {imageList.map((item, key) => {
                             return (
                                 <div className="img-content" key={key}>
-                                    <img src={item} />
-                                    <div className="Feed">
+                                    <img id="i-tattoo" className="img-tattoo" src={item} />
+                                    <div className="who-posted">
                                         <foto />
                                         <p href="">Fulano Studio</p>
                                     </div>
