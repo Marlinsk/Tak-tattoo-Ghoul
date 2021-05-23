@@ -36,23 +36,25 @@ header{
 /* Search bar area */
 
 .search-box{
-  position: absolute;
-  top: 16px;
-  left: 280px;
+  position: relative;
+  top: 8px;
+  left: 20px;
 }
 
 .search-bar{
-  width: 260px;
+  width: 220px;
   height: 36px;
   border: none;
   border-radius: 20px;
   padding: 0 48px;
   box-shadow: 0 4px 4px 0 rgb(0,0,0, .2);
+  font-family: "Didact Gothic";
+  font-size: 14.5px;
 }
 
 .btn-location img{
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
   position: absolute;
   left: 16px;
   top: 9px; 
@@ -64,6 +66,42 @@ header{
   position: absolute;
   right: 16px;
   top: 9px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  margin-top: 8px;
+  width: 100%;
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown .itemdropdown {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+  border: none;
+  padding-left: 18px;
+  font-family: "Didact Gothic";
+  font-size: 14.5px;
+}
+
+.itemdropdown:hover{ 
+ background-color: #e1e5ea;
+ border-radius: auto;
+ overflow: hidden;
+}
+
+.dropdown.close {
+  display:  none;
 }
 
 input:focus{
