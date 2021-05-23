@@ -74,7 +74,7 @@ input:focus{
 
 nav ul{
   float: right;
-  margin-right: 92px;
+  margin-right: 93.5px;
 }
 
 nav ul li{
@@ -86,9 +86,6 @@ nav ul li{
 
 nav ul li a{
   color: #ffff;
-  font-family: "Montserrat";
+  font-family: "Quicksand";
   font-size: 16px;
 }
-
-
-

@@ -52,7 +52,9 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
-                
+                <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"/>
+
                 <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/modal.css" type="text/css" media="all" />
@@ -84,7 +86,7 @@ export default function Home() {
                     </nav>
                 </header>
                 <br /><br />
-                <h3 className="subtitle1"> Estúdios populares em </h3>
+                <h3 className="subtitle1"> Estúdios populares em . . . </h3>
                 <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
                     <div class="boxes">
                         <div class="box"></div>
@@ -106,7 +108,7 @@ export default function Home() {
                     </div>
                 </div>
                 <br /><br />
-                <h3 className="subtitle1"> Estúdios populares em </h3>
+                <h3 className="subtitle1"> Postagens de tattoo recentes em . . . </h3>
                 <div>
                     <section className="layout-grid">
                         {imageList.map((item, key) => {

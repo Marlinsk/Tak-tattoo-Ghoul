@@ -11,7 +11,9 @@
   width: 1280px;
   display: flex;
   color: #ffff;
-  margin: 15px auto;
+  margin: 18px auto;
+  font-family: "Lato";
+  font-size: 24px;
 }
 
 .container-box {
@@ -76,13 +78,13 @@ img{
   background-color: #ff0048;
 }
 
-.Feed p{
+.Feed p{  
   width: 150px;
-  padding-top: 5px;
-  padding-left: 8px;
+  padding-top: 2.5px;
+  padding-left: 10px;
   color: #ffff;
-  font-size: 12.5px;
-  font-family: "Montserrat";
+  font-size: 16.5px;
+  font-family: "Pattaya";
 }
 
 
