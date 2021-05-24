@@ -95,7 +95,6 @@ export default function Home() {
                             <li><a>Início</a></li>
                             <li><a>Estilos</a></li>
                             <li><a>Explorar</a></li>
-                            <li><a>Conectar</a></li>
                         </ul>
                     </nav>
                 </header>
