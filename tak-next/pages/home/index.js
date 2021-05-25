@@ -65,7 +65,6 @@ export default function Home() {
                 <link rel="stylesheet" href="/styles/modal.css" type="text/css" media="all" />
             </Head>
 
-
             <body>
                 <header>
                     <nav className="navbar">
