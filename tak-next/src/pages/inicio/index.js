@@ -7,14 +7,16 @@ export default function Home() {
     var containerBox = useRef(null);
     var dropDown = useRef(null);
     var rotateArrowDropDown = useRef(null);
+    var dropDown2 = useRef(null);
+    var rotateArrowDropDown2 = useRef(null);
 
     function rolagem(e) {
         if (e.deltaY > 0) {
-            containerBox.current.scrollLeft += 400;
+            containerBox.current.scrollLeft += 200;
         }
         else {
             e.preventDefault();
-            containerBox.current.scrollLeft -= 400;
+            containerBox.current.scrollLeft -= 200;
         }
     }
 
@@ -25,7 +27,23 @@ export default function Home() {
             rotate = -180;
         }
         rotateArrowDropDown.current.style.transform = `rotate(${rotate}deg)`;
+    }
+    /*
+    function openDropDown2() {
+        var a = dropDown2.current.classList.toggle('close');
+        var rotate = 0;
+        if (a !== true) {
+            rotate = -180;
+        }
+        rotateArrowDropDown2.current.style.transform = `rotate(${rotate}deg)`;
+    }*/
 
+    function handleScrollLeft() {
+        containerBox.current.scrollLeft -= 200;
+    }
+
+    function handleScrollRight() {
+        containerBox.current.scrollLeft += 200;
     }
 
     return (
@@ -49,7 +67,7 @@ export default function Home() {
             </Head>
 
             <body>
-                <header>
+                <header className="headermenu">
                     <nav className="navbar">
                         <div className="navBarLeft">
                             <div className="logo">
@@ -80,21 +98,43 @@ export default function Home() {
                         </ul>
                     </nav>
                 </header>
-                  
+
+                <header className="menuMobile">
+                    <img className="logoMobile" src="/images/logo/Logo 2 dragão branca sem fundo.png" alt="logo" />
+                    <input type="checkbox" id="scales" name="menu" hidden />
+
+                    <label for="scales">
+                        <img src="/icon/menu.svg" alt="menu" />
+                    </label>
+
+                    <ul className="menuListLeft">
+                        <li> <a className="item_li-left">Início</a></li>
+                        <li> <a className="item_li-left">Estilos</a></li>
+                        <li> <a className="item_li-left">Explorar</a></li>
+                    </ul>
+                </header>
+
                 <br /><br />
 
-                <h3 className="subtitle1"> Estúdios populares em . . . </h3>
-                <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
-                    <div class="boxes">
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
+                <h3 className="subtitle1 first"> Estúdios populares em . . . </h3>
+
+                <div className="scroll-container">
+                    <img className="button-scroll left" src="/icon/next.svg" alt="Imagem1" onClick={handleScrollLeft} />
+                    <div className="main-scroll">
+                        <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
+                            <div class="boxes">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                        </div>
                     </div>
+                    <img className="button-scroll" src="/icon/next.svg" alt="Imagem2" onClick={handleScrollRight} />
                 </div>
 
                 <br /><br />
