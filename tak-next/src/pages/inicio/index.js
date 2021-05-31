@@ -1,15 +1,16 @@
 import Head from 'next/head';
 import React, { useRef } from 'react';
-import { feedList } from './places/tattoo-places-v.js';
+import { feedList } from './feedlist/feedlist.js';
 
 export default function Home() {
 
     var containerBox = useRef(null);
     var dropDown = useRef(null);
     var rotateArrowDropDown = useRef(null);
+    /*
     var dropDown2 = useRef(null);
     var rotateArrowDropDown2 = useRef(null);
-
+    */ 
     function rolagem(e) {
         if (e.deltaY > 0) {
             containerBox.current.scrollLeft += 200;
@@ -36,8 +37,8 @@ export default function Home() {
             rotate = -180;
         }
         rotateArrowDropDown2.current.style.transform = `rotate(${rotate}deg)`;
-    }*/
-
+    }
+    */
     function handleScrollLeft() {
         containerBox.current.scrollLeft -= 200;
     }
@@ -82,12 +83,19 @@ export default function Home() {
                                     <img src="/icon/arrow-down-sign-to-navigate.svg" alt="dopdown-arrow-btn" ref={rotateArrowDropDown} />
                                 </p>
                                 <ul className="dropdown close" ref={dropDown}>
-                                    <li className="itemdropdown">Lista</li>
-                                    <li className="itemdropdown">Listax</li>
-                                    <li className="itemdropdown">Listac</li>
-                                    <li className="itemdropdown">Listaa</li>
-                                    <li className="itemdropdown">Lista</li>
-                                    <li className="itemdropdown">Listd</li>
+                                    <li className="itemdropdown">África do Sul</li>
+                                    <li className="itemdropdown">Amsterdã</li>
+                                    <li className="itemdropdown">Belo Horizonte</li>
+                                    <li className="itemdropdown">Berlim</li>
+                                    <li className="itemdropdown">Cidade do México</li>
+                                    <li className="itemdropdown">Lisboa</li>
+                                    <li className="itemdropdown">Londres</li>
+                                    <li className="itemdropdown">Madrid</li>
+                                    <li className="itemdropdown">Paris</li>
+                                    <li className="itemdropdown">Praga</li>
+                                    <li className="itemdropdown">San Diego</li>
+                                    <li className="itemdropdown">São Paulo</li>
+                                    <li className="itemdropdown">Varsóvia</li>
                                 </ul>
                             </div>
                         </div>
@@ -123,6 +131,10 @@ export default function Home() {
                     <div className="main-scroll">
                         <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
                             <div class="boxes">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
                                 <div class="box"></div>
                                 <div class="box"></div>
                                 <div class="box"></div>
