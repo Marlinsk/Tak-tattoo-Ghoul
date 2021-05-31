@@ -1,4 +1,4 @@
-    var categoryAngels = [
+    export var categoryAngels = [
         "images/image-tattoo/category/angels/36bde2d8e4ccb9e4d5477f6c4f39b3ff.jpg",
         "images/image-tattoo/category/angels/51e0e04943d40670872d7d3a6cba5a44.jpg",
         "images/image-tattoo/category/angels/980acb3243ec7b1d61d7c967c9649432.jpg",
@@ -17,10 +17,14 @@
         "images/image-tattoo/category/angels/b71e457a2d8adad476da05d5c4ca9f47.jpg",
         "images/image-tattoo/category/angels/e7fbe5a84986b944112b08e02d17f5df.jpg",
         "images/image-tattoo/category/angels/ef38bf7d93c849d84e421a33713c6ccd.jpg",
-        "images/image-tattoo/category/angels/fbbfa5faa7e27490156c197c688ea58d.jpg"
+        "images/image-tattoo/category/angels/fbbfa5faa7e27490156c197c688ea58d.jpg",
+        "images/image-tattoo/category/angels/6d86ce64c1aa2d8bc86330a35b9d3bdc.jpg",
+        "images/image-tattoo/category/angels/c0647a36a6130db5dd3faa61159cd384.jpg",
+        "images/image-tattoo/category/angels/d6a631eddfd0416f9d136364ca820b99.jpg",
+        "images/image-tattoo/category/angels/0dd06aa4c69e1b77077a9d2a4a52a7fe.jpg"
     ];
 
-    var categoryAnimal = [
+    export var categoryAnimal = [
         "images/image-tattoo/category/animal/822f805edb9ddde96717f54f7f6479de.jpg",
         "images/image-tattoo/category/animal/4c8b5c66292ffc9c4fe44d2a111c6a96.jpg",
         "images/image-tattoo/category/animal/2cd8c11e5b70d5caf36bbe52d21e0f7e.jpg",
@@ -38,10 +42,23 @@
         "images/image-tattoo/category/animal/f05f15af4a472e43065b41a275c453e9.jpg",
         "images/image-tattoo/category/animal/7fb5be3af9a36184ffb9ffa00dae580f.jpg",
         "images/image-tattoo/category/animal/c52875e2a0d992b9c94a70104a2ff5c4.jpg",
-        "images/image-tattoo/category/animal/a7ead54cef51b32f77811690c4386969.jpg"
+        "images/image-tattoo/category/animal/a7ead54cef51b32f77811690c4386969.jpg",
+        "images/image-tattoo/category/animal/02a6c47fd1afd9d7a13a39307cb751e0.jpg",
+        "images/image-tattoo/category/animal/3f1893b16e04eaa0607973dd0c307eca.jpg",
+        "images/image-tattoo/category/animal/4e5cccf927cbb6ab7c1d3e0f254ada76.jpg",
+        "images/image-tattoo/category/animal/6ed60a883b6270fdf92fb63793ca4878.jpg",
+        "images/image-tattoo/category/animal/8a587309bd0b0c0f3fed7d05a034dd24.jpg",
+        "images/image-tattoo/category/animal/633f921014b1ce2e6660485e6264a831.jpg",
+        "images/image-tattoo/category/animal/4768218fd22a1daa718e70188a13321a.jpg",
+        "images/image-tattoo/category/animal/c2db167d44811080ee5945eb3742048a.jpg",
+        "images/image-tattoo/category/animal/e68b796b88a1f0cb036ff08f455ed04c.jpg",
+        "images/image-tattoo/category/animal/f83b54abb55a51259acd8a8e3e7eaf1c.jpg",
+        "images/image-tattoo/category/animal/fbe601a9db03c6918ecdafb3162d6c37.jpg",
+        "images/image-tattoo/category/animal/fc3d3f3a69190d0aad7231cced626ae4.jpg"
+
     ];
 
-    var categoryEgyptian = [
+    export var categoryEgyptian = [
         "images/image-tattoo/category/egyptian/7712971313e244c0f0672824d3acc182.jpg",
         "images/image-tattoo/category/egyptian/b96bc38958a94283fed7bf8b01e81078.jpg",
         "images/image-tattoo/category/egyptian/0fff5e2a384168b7aebcab337abd01ed.jpg",
@@ -49,7 +66,7 @@
         "images/image-tattoo/category/egyptian/873672cd34e3141cfab6419601099867.jpg"
     ];
 
-    var categoryEyes = [
+    export var categoryEyes = [
         "images/image-tattoo/category/eyes/7e72b0c8e35e3aea4f924926a28f4b3b.jpg",
         "images/image-tattoo/category/eyes/2294346cf8823f9ee5c7346012a6befb.jpg",
         "images/image-tattoo/category/eyes/f4d1a7d500a6422200cb620dfbfade9b.jpg",
@@ -59,10 +76,11 @@
         "images/image-tattoo/category/eyes/8576b526f134dc54a2efd43151877edf.jpg",
         "images/image-tattoo/category/eyes/1282721da746836b511910689db43d22.jpg",
         "images/image-tattoo/category/eyes/aeb929441ee505ae6f5c5c1b2d924224.jpg",
-        "images/image-tattoo/category/eyes/f4d8e39b344709762ad9f73a2a5444bb.jpg"
+        "images/image-tattoo/category/eyes/f4d8e39b344709762ad9f73a2a5444bb.jpg",
+        "images/image-tattoo/category/eyes/e91c23248e8b25133a1f1df999afd4bd.jpg"
     ];
     
-    var categoryGeometric = [
+    export var categoryGeometric = [
         "images/image-tattoo/category/geometric/0cfd8b650a3cd7c510cc7223f2dbb246.jpg",
         "images/image-tattoo/category/geometric/2d8770b9907982387144e7b46743beda.jpg",
         "images/image-tattoo/category/geometric/5a9abc7479d15925012d4ee2536a1bae.jpg",
@@ -75,7 +93,7 @@
         "images/image-tattoo/category/geometric/f1374d43f5bf779eac2e2b71e8c7caa7.jpg"
     ];
     
-    var categoryGothic = [
+    export var categoryGothic = [
         "images/image-tattoo/category/gothic/1c0ae242efabcd3f632c182b9425b88a.jpg",
         "images/image-tattoo/category/gothic/8cd14ba154563ed19912542302883e88.jpg",
         "images/image-tattoo/category/gothic/48fedf3e42497ba6c70284a97686b99e.jpg",
@@ -93,10 +111,23 @@
         "images/image-tattoo/category/gothic/cc5f46b84ff41ef5cf6b20fae258515a.jpg",
         "images/image-tattoo/category/gothic/d4f27221f8b122f6099d91b710b38587.jpg",
         "images/image-tattoo/category/gothic/d8842b380d2d6652e3d01516bdd503fd.jpg",
-        "images/image-tattoo/category/gothic/f80184328b198d153003cf0b31270da2.jpg"
+        "images/image-tattoo/category/gothic/f80184328b198d153003cf0b31270da2.jpg",
+        "images/image-tattoo/category/gothic/1ab290716ffb57af4690b60bd654fbab.jpg",
+        "images/image-tattoo/category/gothic/021da4f2520ea5c645aaf01ff268472f.jpg",
+        "images/image-tattoo/category/gothic/307adbd43970ed4687bd3cca535f5116.jpg",
+        "images/image-tattoo/category/gothic/617e56d0c77bc9d980e65dc6c3139697.jpg",
+        "images/image-tattoo/category/gothic/03315d604a67fc2b6788ba59b9e391d2.jpg",
+        "images/image-tattoo/category/gothic/ab1854d8deef45d2e86d20db18055326.jpg",
+        "images/image-tattoo/category/gothic/b4a1605f75c172ac6293df243695c634.jpg",
+        "images/image-tattoo/category/gothic/c2bdf96484546c5214255a55846eb48c.jpg",
+        "images/image-tattoo/category/gothic/ca35971e4cfd81f53a48b7c21725916a.jpg",
+        "images/image-tattoo/category/gothic/cfbf2ee9754402e48235c37fd7c62cc1.jpg",
+        "images/image-tattoo/category/gothic/f6780647b6ee65ec3cf84e4a77bb1232.jpg",
+        "images/image-tattoo/category/gothic/fe577a605c4e8ba26524ec07ec13aee1.jpg",
+        "images/image-tattoo/category/gothic/05dbcb6b1bca060cdaccb2ba0f1bba48.jpg"
     ];
     
-    var categoryOriental = [
+    export var categoryOriental = [
         "images/image-tattoo/category/oriental/4174b7a5b926198a4906e125ba39b0b2.jpg",
         "images/image-tattoo/category/oriental/3f7f5c278065b7657ac83baa73d97ab1.jpg",
         "images/image-tattoo/category/oriental/3fcd33af5a5ea032dbd0f304ee230f67.jpg",
@@ -116,11 +147,16 @@
         "images/image-tattoo/category/oriental/bbd0ccf8b1ed42db69bf2b3f4a301f74.jpg",
         "images/image-tattoo/category/oriental/d3dacb56c9a35dadd126d83490ecb80e.jpg",
         "images/image-tattoo/category/oriental/d43df37eb334173bd212c81a2710bbf4.jpg",
-        "images/image-tattoo/category/oriental/fce61dfeef0b4a93d8368766437931b7.jpg"
-
+        "images/image-tattoo/category/oriental/fce61dfeef0b4a93d8368766437931b7.jpg",
+        "images/image-tattoo/category/oriental/4ab31b9a89fadc0aa923ed4647bdb5e7.jpg",
+        "images/image-tattoo/category/oriental/48bee0bcd92bd82e81cdbff091a721fc.jpg",
+        "images/image-tattoo/category/oriental/1102ceea888afbff5a0e489c5cad5d32.jpg",
+        "images/image-tattoo/category/oriental/50766a892c26865c86c24573be7961ff.jpg",
+        "images/image-tattoo/category/oriental/d422deca4c475688de154acd1da14b5a.jpg",
+        "images/image-tattoo/category/oriental/dc66da796b8c0cca14b2fd6aa09ae380.jpg"
     ];
     
-    var categoryScifi = [
+    export var categoryScifi = [
         "images/image-tattoo/category/sci-fi/6df9a4173cb30b0772f63d910074ac8e.jpg",
         "images/image-tattoo/category/sci-fi/19736d3475808e5d2125541fe2445f10.jpg",
         "images/image-tattoo/category/sci-fi/a20430004e0ad2dcaa0c6ca5dc221778.jpg",
@@ -128,7 +164,7 @@
         "images/image-tattoo/category/sci-fi/f66a552b05aea43c1a15f0bad933d5c1.jpg"
     ];
     
-    var categoryScience = [
+    export var categoryScience = [
         "images/image-tattoo/category/science/5d0020f0571527960babe6a6ed9a8c02.jpg",
         "images/image-tattoo/category/science/df93e5b0c43c6f514957cf0303be4b36.jpg",
         "images/image-tattoo/category/science/7dd232ce6aef0229437dcba1f40e5e00.jpg",
@@ -140,10 +176,11 @@
         "images/image-tattoo/category/science/e4f38d005dd18f5a95e35e67911329d5.jpg",
         "images/image-tattoo/category/science/e0869f1f6069f2ddd5b248dbc322cb39.jpg",
         "images/image-tattoo/category/science/e7822106f21e5f4aa967c7bcae41b07e.jpg",
-        "images/image-tattoo/category/science/fc5f3dab851b20fab3f137b96e0a4fac.jpg"
+        "images/image-tattoo/category/science/fc5f3dab851b20fab3f137b96e0a4fac.jpg",
+        "images/image-tattoo/category/science/cd591bc02f653976c5f3a68c36f97329.jpg"
     ];
     
-    var categorySpace = [
+    export var categorySpace = [
         "images/image-tattoo/category/space/6ec4a9b2eae625c27eecf7e4695e4cfa.jpg",
         "images/image-tattoo/category/space/189e4e349dcc6914ae8163e46459eac2.jpg",
         "images/image-tattoo/category/space/86566866c148db9dff7f75e560cfe410.jpg",
@@ -154,10 +191,15 @@
         "images/image-tattoo/category/space/7e89def8dc24e41f3c6fbf8be37d870e.jpg",
         "images/image-tattoo/category/space/9a4e8416c4ee279a11162139953ea48c.jpg",
         "images/image-tattoo/category/space/b0ae14c1a1701fc52895f2b1a7e4caca.jpg",
-        "images/image-tattoo/category/space/ea688599b7362d5639c51f23665d9bb4.jpg"
+        "images/image-tattoo/category/space/ea688599b7362d5639c51f23665d9bb4.jpg",
+        "images/image-tattoo/category/space/6bcf051fc396abbf6c46f25ab96c8a4a.jpg",
+        "images/image-tattoo/category/space/009a3820ef81e8d1a2c34de035873d9e.jpg",
+        "images/image-tattoo/category/space/37c7699e29e8e62789bd34d3f94f2493.jpg",
+        "images/image-tattoo/category/space/d5d6b923f834977a26eed6ec1ba6daca.jpg",
+        "images/image-tattoo/category/space/e4acdbdaa9eb58b7633b5123d1e2655b.jpg"
     ];
 
-    var categorySurrealist = [
+    export var categorySurrealist = [
         "images/image-tattoo/category/surrealist/06f9d461ff470c3ec65c9e9f5e696c26.jpg",
         "images/image-tattoo/category/surrealist/6a2992e9b4d3ab28f5eba22f14187d1c.jpg",
         "images/image-tattoo/category/surrealist/12c92bd578fda4d878b2860e58fe2f33.jpg",
@@ -173,5 +215,13 @@
         "images/image-tattoo/category/surrealist/d2fbb44abbeacf1fe3494b928816f0ab.jpg",
         "images/image-tattoo/category/surrealist/de1e47d216fcd3dfdddbdc719266c735.jpg",
         "images/image-tattoo/category/surrealist/e3e86b37cce225a269ef08aef8430c07.jpg",
-        "images/image-tattoo/category/surrealist/ed43ac4e5bb1172a2bbd5b513fa8a915.jpg"
+        "images/image-tattoo/category/surrealist/ed43ac4e5bb1172a2bbd5b513fa8a915.jpg",
+        "images/image-tattoo/category/surrealist/0e8722d8c2bcc772f9f921a298077b28.jpg",
+        "images/image-tattoo/category/surrealist/a58efc8f863abb04eba7cdcb4115fd74.jpg",
+        "images/image-tattoo/category/surrealist/b617f6a95abe42cf0ec30d23a53de9ea.jpg",
+        "images/image-tattoo/category/surrealist/cb4c206095bf177312b9703bf54e046e.jpg",
+        "images/image-tattoo/category/surrealist/cef3532f193e1be82e2a55d4fea5f4df.jpg",
+        "images/image-tattoo/category/surrealist/dc4194876a5eecaf6e65bf90c6038de9.jpg",
+        "images/image-tattoo/category/surrealist/e728221c7fe5731a16c21549ecaa3e04.jpg",
+        "images/image-tattoo/category/surrealist/f10ce6dad7e0acdd3a54ad3e82c24e87.jpg"
     ];
