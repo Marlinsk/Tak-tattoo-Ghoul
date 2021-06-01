@@ -25,11 +25,11 @@
 
 .modal{
   background: #ffff;
-  width: 336px;
-  height: 508px;
-  padding: 33px;
+  width: 822px;
+  height: 608px;
+  padding: 19px;
   border: none;
-  border-radius: 8px;
+  border-radius: 16px;
   position: relative;
 }
 
@@ -48,6 +48,53 @@
   animation: modal 3s;
 }
 
+.imagem-f{
+  width: 100%;
+  height: 570px;
+  max-width: 376px;
+  background-color: #ff0048;
+  display: flex;
+  border-radius: 16px;
+}
+
+.img-perfil{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 19px;
+  left: 430px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.nomedoestúdio{
+  width: 185px;
+  height: 35px;
+  position: absolute;
+  top: 39px;
+  left: 530px;
+  font-family: "Pattaya";
+  font-size: 30px;
+  color: black;
+}
+
+.post-describe{
+  width: 340px;
+  position: absolute;
+  top: 163px;
+  left: 430px;
+  font-family: 'Dosis';
+  font-size: 16px;
+}
+
+.subtitle{
+  position: absolute;
+  top: 126px;
+  left: 430px;
+  font-size: 27px;
+  font-family: 'Dosis';
+}
+
 .close-login{
   position: absolute;
   right: 21px;
@@ -64,88 +111,3 @@
   box-shadow: 0 4px 4px 0 rgb(0,0,0, .1);
 }
 
-.frase-login{
-  display: flex;
-  justify-content: center;
-  padding-top: 16px;
-  font-family: "Space Mono";
-  font-size: 16px;
-}
-
-.logo-title{
-  width: 162px;
-  height: 162px;
-  position: absolute;
-  right: 87px;
-  top: 38px;
-}
-
-.label-email-login{
-  position: absolute;
-  top: 170px;
-  font-family: "Lato";
-}
-
-.input-email-login{
-  width: 270px;
-  height: 42px;
-  background: #F3F3F3;
-  border: none;
-  border-radius: 6px;
-  position: absolute;
-  top: 200px;
-}
-
-.label-senha-login{
-  position: absolute;
-  top: 258px;
-  font-family: "Lato";
-}
-
-.input-password-login{
-  width: 270px;
-  height: 42px;
-  background: #F3F3F3;
-  border: none;
-  border-radius: 6px;
-  position: absolute;
-  top: 288px;
-}
-
-.link-recupera-senha{
-  display: flex;
-  justify-content: center;
-  
-  padding-top: 238px;
-  font-family: "Lato";
-}
-
-.link-recupera-senha a{
-  color: #ff0048;
-}
-
-.btn-conectar-login{
-  width: 162px;
-  height: 48px;
-  border: none;
-  border-radius: 24px;
-  position: absolute;
-  top: 386px;
-  right: 87px;
-  font-family: "Montserrat", sans-serif;
-  color: #ffff;
-  background: #ff0048;
-  box-shadow: 0 4px 4px 0 rgb(0,0,0, .2);
-  cursor: pointer;
-}
-
-.link-criar-conta{
-  display: flex;
-  justify-content: center;
-  padding-top: 68px;
-  font-family: "Lato";
-}
-
-.link-criar-conta a{
-  color: #ff0048;
-}

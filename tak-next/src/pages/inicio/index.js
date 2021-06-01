@@ -62,6 +62,8 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mandali&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"/>
 
                 <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
@@ -146,7 +148,7 @@ export default function Home() {
                     <img className="button-scroll" src="/icon/next.svg" alt="Imagem2" onClick={handleScrollRight} />
                 </div>
 
-                <br/>
+                <br />
 
                 <h3 className="subtitle1"> Postagens de tattoo recentes </h3>
                 <div>
@@ -167,22 +169,19 @@ export default function Home() {
 
                 <div id="modal-conectar" className="modal-container">
                     <div className="modal">
-                        <button className="close-login">x</button>
-                        <h4 className="frase-login">Conecte-se ao universo</h4>
-                        <img className="logo-title" src="/images/logo/Logo 2 dragão sem fundo.png" alt="" />
                         <form action="">
-                            <div>
-                                <label className="label-email-login" for="email">Email</label><br />
-                                <input type="text" className="input-email-login" />
+                            <div className="imagem-f">
+                                
                             </div>
                             <div>
-                                <label className="label-senha-login" for="senha">Senha</label><br />
-                                <input type="text" className="input-password-login" />
+                                <content className="img-perfil"></content>
+                                <p className="nomedoestúdio"> Fulano Studio</p>               
+                            </div>
+                            <div>
+                                <h4 className="subtitle">Lorem ipsum</h4>
+                                <p className="post-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ligula pharetra tellus volutpat faucibus. Donec nibh risus, elementum vel laoreet nec, faucibus ut est. Praesent dictum, nisi pellentesque euismod semper, libero lacus rutrum urna, quis euismod enim odio id ex. Etiam sollicitudin elit nisi, quis consequat augue hendrerit hendrerit.</p>
                             </div>
                         </form>
-                        <p className="link-recupera-senha">Esqueçeu sua senha?<a href="">Recupere-a</a></p><br />
-                        <button className="btn-conectar-login" type="submit">Conectar</button>
-                        <p className="link-criar-conta">Não tem uma conta?<a href="">Crie uma!</a></p><br />
                     </div>
                 </div>
             </body>
