@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React, { useRef } from 'react';
 import { feedList } from './feedlist/feedlist.js';
+import { studioList } from './tattoo-studios/tattoofeedlist.js'
 
 export default function Home() {
 
@@ -10,7 +11,7 @@ export default function Home() {
     /*
     var dropDown2 = useRef(null);
     var rotateArrowDropDown2 = useRef(null);
-    */ 
+    */
     function rolagem(e) {
         if (e.deltaY > 0) {
             containerBox.current.scrollLeft += 200;
@@ -124,34 +125,30 @@ export default function Home() {
 
                 <br /><br />
 
-                <h3 className="subtitle1 first"> Estúdios populares em . . . </h3>
+                <h3 className="subtitle1 first"> Estúdios e Tatuadores Independentes </h3>
 
                 <div className="scroll-container">
                     <img className="button-scroll left" src="/icon/next.svg" alt="Imagem1" onClick={handleScrollLeft} />
                     <div className="main-scroll">
+
                         <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
                             <div class="boxes">
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
+                                {studioList.map((item, key) => {
+                                    return (
+                                        <div className="boxes" key={key}>
+                                            <img id="i-tattoo-studio" className="box" src={item} />
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
                     <img className="button-scroll" src="/icon/next.svg" alt="Imagem2" onClick={handleScrollRight} />
                 </div>
 
-                <br /><br />
+                <br/>
 
-                <h3 className="subtitle1"> Postagens de tattoo recentes em . . . </h3>
+                <h3 className="subtitle1"> Postagens de tattoo recentes </h3>
                 <div>
                     <section className="layout-grid">
                         {feedList.map((item, key) => {

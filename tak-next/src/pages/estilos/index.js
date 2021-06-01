@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { categoryGothic } from './category-tattoo-style-v/tattoo-style-v.js';
+import { categorytattoo } from './category-tattoo-style-v/tattoo-style-v.js';
 
 export default function Estilos() {
     return (
@@ -22,7 +24,72 @@ export default function Estilos() {
             </Head>
 
             <body>
-                
+                <header className="headermenu">
+                    <nav className="navbar">
+                        <div className="navBarLeft">
+                            <div className="logo">
+                                <img src="/images/logo/Logo 2 dragão branca sem fundo.png" alt="logo" width="98" height="53" />
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a>Início</a></li>
+                            <li><a>Estilos</a></li>
+                            <li><a>Explorar</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <header className="menuMobile">
+                    <img className="logoMobile" src="/images/logo/Logo 2 dragão branca sem fundo.png" alt="logo" />
+                    <input type="checkbox" id="scales" name="menu" hidden />
+
+                    <label for="scales">
+                        <img src="/icon/menu.svg" alt="menu" />
+                    </label>
+
+                    <ul className="menuListLeft">
+                        <li> <a className="item_li-left">Início</a></li>
+                        <li> <a className="item_li-left">Estilos</a></li>
+                        <li> <a className="item_li-left">Explorar</a></li>
+                    </ul>
+                </header>
+
+                <br /><br />
+
+                <h3 className="subtitle1"> Escolha seu estilo de tattoo </h3>
+
+                <div>
+                    <section className="layout-grid2">
+                        {categorytattoo.map((item, key) => {
+                            return (
+                                <div className="img-content2" key={key}>
+                                    <img id="i-tattoo2" className="img-tattoo2" src={item} />
+                                </div>
+                            )
+                        })}
+                    </section>
+                </div>
+
+                <br />
+
+                <h3 className="subtitle1"> Tatuagens no estilo . . . </h3>
+
+                <div>
+                    <section className="layout-grid3">
+                        {categoryGothic.map((item, key) => {
+                            return (
+                                <div className="img-content" key={key}>
+                                    <img id="i-tattoo" className="img-tattoo" src={item} />
+                                    <div className="who-posted">
+                                        <foto />
+                                        <p href="">Fulano Studio</p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </section>
+                </div>
+
             </body>
         </>
     )
