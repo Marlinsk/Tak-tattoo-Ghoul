@@ -58,11 +58,16 @@
 
 .container-box .box {
     scroll-snap-align: start;
-    background-color: #ff0048;
     margin: 0 10px;
-    height: 120px;
-    width: 180px;
-    border-radius: 12px;
+    max-width: 1000px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+.box:hover {
+    filter: brightness(65%);
+    transition: filter .2s ease; 
 }
 
 /* layout-grid area */
@@ -124,4 +129,38 @@
   .subtitle1.first {
     margin-top: 10vh;
   }
+}
+
+/* Layout grid of page estilos*/
+
+.layout-grid2 {
+  max-width: 1280px;
+  margin: 0 auto;
+  column-count: 6;
+}
+
+.img-content2 {
+  margin-bottom: 16px;
+  overflow: hidden;
+  break-inside: avoid-column;
+  cursor: pointer;
+}
+
+.img-content2:hover > #i-tattoo2{
+  filter: brightness(65%);
+  transition: filter .2s ease; 
+}
+
+.img-tattoo2{
+  display: block;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+/* Layout-style */
+
+.layout-grid3 {
+  max-width: 1280px;
+  margin: 0 auto;
+  column-count: 6;
 }
