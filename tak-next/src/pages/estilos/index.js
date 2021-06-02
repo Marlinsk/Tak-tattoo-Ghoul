@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { categoryGothic } from './category-tattoo-style-v/tattoo-style-v.js';
 import { categorytattoo } from './category-tattoo-style-v/tattoo-style-v.js';
+import Link from 'next/link';
 
 export default function Estilos() {
     return (
@@ -32,8 +33,16 @@ export default function Estilos() {
                             </div>
                         </div>
                         <ul>
-                            <li><a>Início</a></li>
-                            <li><a>Estilos</a></li>
+                            <li>
+                                <Link href="inicio">
+                                    <a>Início</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="estilos">
+                                    <a>Estilos</a>
+                                </Link>
+                            </li>
                             <li><a>Explorar</a></li>
                         </ul>
                     </nav>

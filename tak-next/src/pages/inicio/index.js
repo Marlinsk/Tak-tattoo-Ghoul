@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import React, { useRef } from 'react';
 import { feedList } from './feedlist/feedlist.js';
-import { studioList } from './tattoo-studios/tattoofeedlist.js'
+import { studioList } from './tattoo-studios/tattoofeedlist.js';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -63,7 +64,7 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mandali&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
 
                 <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
@@ -103,8 +104,16 @@ export default function Home() {
                             </div>
                         </div>
                         <ul>
-                            <li><a>Início</a></li>
-                            <li><a>Estilos</a></li>
+                            <li>
+                                <Link  href="inicio">
+                                    <a>Início</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="estilos">
+                                    <a>Estilos</a>
+                                </Link>
+                            </li>
                             <li><a>Explorar</a></li>
                         </ul>
                     </nav>
@@ -171,11 +180,11 @@ export default function Home() {
                     <div className="modal">
                         <form action="">
                             <div className="imagem-f">
-                                
+
                             </div>
                             <div>
                                 <content className="img-perfil"></content>
-                                <p className="nomedoestúdio"> Fulano Studio</p>               
+                                <p className="nomedoestúdio"> Fulano Studio</p>
                             </div>
                             <div>
                                 <h4 className="subtitle">Lorem ipsum</h4>
