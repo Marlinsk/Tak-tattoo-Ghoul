@@ -181,10 +181,10 @@ export default function Home() {
                         <button className="close-post">x</button>
                         <form action="">
                             <div className="post-img">
-                               
+                                <img src="images/image-tattoo/category/gothic/cc5f46b84ff41ef5cf6b20fae258515a.jpg" alt="" />
                             </div>
                             <div className="img-perfil">                            
-                                
+                                <img src="/images/sketches/category/gothic/2985c25803b66ff00f83c025d691e81c.jpg" alt="" />
                             </div>
                             <div>
                                 <p className="profile-name">Fulano Studio</p>
@@ -196,7 +196,26 @@ export default function Home() {
                             </form>
                     </div>
                 </div>
-                <div></div> 
+                
+                <div className="modal-profile-container">
+                    <div className="profile-modal">
+                        <button className="">x</button>
+                        <form action="">
+                            <div className="">
+
+                            </div>
+                            <div className="">
+
+                            </div>
+                            <div>
+                                <p className="">Fulano Studio</p>
+                            </div>
+                            <div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </body>
         </>
     )
