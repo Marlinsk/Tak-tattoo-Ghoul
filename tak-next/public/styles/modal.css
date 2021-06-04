@@ -14,7 +14,7 @@
   top: 0px;
   left: 0px;
   z-index: 2000;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -34,7 +34,7 @@
   height: 473px;
   max-width: 272px;
   background-color: #000;
-  display: none;
+  display: flex;
   border-radius: 12px;
   box-shadow: 0 4px 4px 0 rgb(0,0,0, .2);
 }
