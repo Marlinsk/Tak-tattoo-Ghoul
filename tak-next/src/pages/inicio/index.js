@@ -62,9 +62,9 @@ export default function Home() {
                 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mandali&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mandali&display=swap" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap" rel="stylesheet"/>
 
                 <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
@@ -176,23 +176,27 @@ export default function Home() {
                     </section>
                 </div>
 
-                <div id="modal-conectar" className="modal-container">
-                    <div className="modal">
+                <div className="modal-post-container">
+                    <div className="post-modal">
+                        <button className="close-post">x</button>
                         <form action="">
-                            <div className="imagem-f">
-
+                            <div className="post-img">
+                               
+                            </div>
+                            <div className="img-perfil">                            
+                                
                             </div>
                             <div>
-                                <content className="img-perfil"></content>
-                                <p className="nomedoestúdio"> Fulano Studio</p>
+                                <p className="profile-name">Fulano Studio</p>
                             </div>
                             <div>
-                                <h4 className="subtitle">Lorem ipsum</h4>
-                                <p className="post-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ligula pharetra tellus volutpat faucibus. Donec nibh risus, elementum vel laoreet nec, faucibus ut est. Praesent dictum, nisi pellentesque euismod semper, libero lacus rutrum urna, quis euismod enim odio id ex. Etiam sollicitudin elit nisi, quis consequat augue hendrerit hendrerit.</p>
+                                <h4 className="post-title">Lorem ipsum</h4>
+                                <p className="post-describe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut ligula pharetra tellus volutpat faucibus. Donec nibh risus, elementum vel laoreet nec, faucibus ut est. Praesent dictum, nisi pellentesque euismod semper, libero lacus rutrum urna, quis euismod enim odio id...</p>
                             </div>
-                        </form>
+                            </form>
                     </div>
                 </div>
+                <div></div> 
             </body>
         </>
     )

@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* modal login screen area */
+/* modal-post */
 
-.modal-container{
+.modal-post-container{
   width: 100vw;
   height: 100vh;
   background: rgb(0,0,0,.5);
@@ -19,83 +19,67 @@
   align-items: center;
 }
 
-.modal-container.mostrar{
-  display: flex;
-}
-
-.modal{
+.post-modal{
   background: #ffff;
-  width: 822px;
-  height: 608px;
-  padding: 19px;
+  width: 594px;
+  height: 489px;
+  padding: 8px;
   border: none;
-  border-radius: 16px;
+  border-radius: 12px;
   position: relative;
 }
 
-@keyframes modal {
-  from{
-    opacity: 0;
-    transform: translate3d(0, 60px, 0);
-  }
-  to{
-    opacity: 1;
-    transform: translate3d(0, 0px, 0);
-  }
-}
-
-.mostrar .modal{
-  animation: modal 3s;
-}
-
-.imagem-f{
+.post-img{
   width: 100%;
-  height: 570px;
-  max-width: 376px;
-  background-color: #ff0048;
+  height: 100%;
+  max-height: 473px;
+  max-width: 272px;
+  background-color: #000;
   display: flex;
-  border-radius: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 0 rgb(0,0,0, .5);
 }
 
 .img-perfil{
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 19px;
-  left: 430px;
-  background-color: black;
+  top: 28px;
+  left: 302px;
+  background-color: #000;
   border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgb(0,0,0, .5);
 }
 
-.nomedoestúdio{
+.profile-name{
   width: 185px;
   height: 35px;
   position: absolute;
-  top: 39px;
-  left: 530px;
+  top: 48px;
+  left: 398px;
   font-family: "Pattaya";
   font-size: 30px;
-  color: black;
+  color: #000;
+}
+
+.post-title{
+  position: absolute;
+  top: 126px;
+  left: 302px;
+  font-size: 27px;
+  font-family: 'Bitter', serif;
 }
 
 .post-describe{
-  width: 340px;
+  width: 258px;
   position: absolute;
-  top: 163px;
-  left: 430px;
-  font-family: 'Dosis';
+  top: 170px;
+  left: 302px;
+  font-family: 'Bitter', serif;
   font-size: 16px;
 }
 
-.subtitle{
-  position: absolute;
-  top: 126px;
-  left: 430px;
-  font-size: 27px;
-  font-family: 'Dosis';
-}
-
-.close-login{
+.close-post{
   position: absolute;
   right: 21px;
   top: -20px;
@@ -108,6 +92,8 @@
   font-family: "Indie Flower", regular;
   font-size: 1.2rem;
   cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgb(0,0,0, .1);
+  box-shadow: 0 4px 4px 0 rgb(0,0,0, .2);
 }
+
+/* modal-profile */
 
