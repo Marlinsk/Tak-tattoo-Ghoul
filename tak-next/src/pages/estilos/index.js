@@ -17,8 +17,9 @@ export default function Estilos() {
                 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
-                <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mandali&display=swap" rel="stylesheet"></link>
-
+                <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Mandali&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+                
                 <link rel="stylesheet" href="/styles/navbar.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/grid.css" type="text/css" media="all" />
                 <link rel="stylesheet" href="/styles/modal.css" type="text/css" media="all" />
@@ -73,6 +74,7 @@ export default function Estilos() {
                             return (
                                 <div className="img-content2" key={key}>
                                     <img id="i-tattoo2" className="img-tattoo2" src={item} />
+                                    <h3 id="style-name" className="style-name">Estilos</h3>
                                 </div>
                             )
                         })}

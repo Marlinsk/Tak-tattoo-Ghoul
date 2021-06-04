@@ -11,6 +11,10 @@
         "images/image-tattoo/category/oriental/48bee0bcd92bd82e81cdbff091a721fc.jpg",
         "images/image-tattoo/category/surrealist/0e8722d8c2bcc772f9f921a298077b28.jpg",
         "images/image-tattoo/category/eyes/2294346cf8823f9ee5c7346012a6befb.jpg"
+    ];  
+        
+    export var categoryName = [
+        "Anjos", "Animais", "Ciências", "Egípcios", "Espaço", "Sci-fi", "Flores", "Geométrico", "Gótica", "Oriental", "Surrealista", "Olhos"
     ];
 
     export var categoryAngels = [
