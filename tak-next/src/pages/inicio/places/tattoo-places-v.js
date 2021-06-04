@@ -236,3 +236,19 @@ export var varsoviaList = [
     "images/image-tattoo/category/angels/b71e457a2d8adad476da05d5c4ca9f47.jpg",
     "images/image-tattoo/category/oriental/233f4c0d0dba7879a640724e6605d796.jpg"
 ];
+
+export var localidades = {
+    "África do Sul": africadosulList,
+    "Amsterdã": amsterdList,
+    "Belo Horizonte": bhList,
+    "Berlim": berlimList,
+    "Cidade do México": cidadedomexicoList,
+    "Lisboa": lisboaList,
+    "Londres": londresList,
+    "Madrid": madrid,
+    "Paris": parisList,
+    "Praga": pragaList,
+    "San Diego": sandiegoList,
+    "São Paulo": saopauloList,
+    "Varsóvia": varsoviaList
+}

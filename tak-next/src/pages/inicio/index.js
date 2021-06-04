@@ -1,11 +1,15 @@
 import Head from 'next/head';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { feedList } from './feedlist/feedlist.js';
 import { studioList } from './tattoo-studios/tattoofeedlist.js';
 import Link from 'next/link';
+import { localidades } from './places/tattoo-places-v.js';
 
 export default function Home() {
-
+    
+    var [localidadesList] = useState(Object.keys(localidades));
+    var getDropdownlocalidade = useRef(null);
+    
     var containerBox = useRef(null);
     var dropDown = useRef(null);
     var rotateArrowDropDown = useRef(null);
@@ -49,6 +53,10 @@ export default function Home() {
         containerBox.current.scrollLeft += 200;
     }
 
+    function getNameLocalidade(e) {
+        alert(e.target.innerText);
+    }
+
     return (
         <>
             <Head>
@@ -87,19 +95,10 @@ export default function Home() {
                                     <img src="/icon/arrow-down-sign-to-navigate.svg" alt="dopdown-arrow-btn" ref={rotateArrowDropDown} />
                                 </p>
                                 <ul className="dropdown close" ref={dropDown}>
-                                    <li className="itemdropdown">África do Sul</li>
-                                    <li className="itemdropdown">Amsterdã</li>
-                                    <li className="itemdropdown">Belo Horizonte</li>
-                                    <li className="itemdropdown">Berlim</li>
-                                    <li className="itemdropdown">Cidade do México</li>
-                                    <li className="itemdropdown">Lisboa</li>
-                                    <li className="itemdropdown">Londres</li>
-                                    <li className="itemdropdown">Madrid</li>
-                                    <li className="itemdropdown">Paris</li>
-                                    <li className="itemdropdown">Praga</li>
-                                    <li className="itemdropdown">San Diego</li>
-                                    <li className="itemdropdown">São Paulo</li>
-                                    <li className="itemdropdown">Varsóvia</li>
+                                    {localidadesList.map((item, index) => {
+                                        return <li ref={getDropdownlocalidade} onClick={() => getNameLocalidade(e)} className="itemdropdown" key={index}>{item}</li>
+                                    })}
+                                    
                                 </ul>
                             </div>
                         </div>
