@@ -249,6 +249,7 @@ export var ElisTattoo = [
 ]
 
 export var GangstarStudio = [
+    
     {
         img: "images/image-tattoo/category/angels/c0647a36a6130db5dd3faa61159cd384.jpg",
         name: "Gangstar Studio",
@@ -760,6 +761,7 @@ export var MartinsTattoo = [
 ]
 
 export var Mazor = [
+    
     {
         img: "images/image-tattoo/category/space/fa10b132fd400e2ed937df10e7b725c1.jpg",
         name: "Mazor",
@@ -802,6 +804,7 @@ export var Methamorphosys = [
 ]
 
 export var MiarahTattoo = [
+    
     {
         img: "images/image-tattoo/category/egyptian/0fff5e2a384168b7aebcab337abd01ed.jpg",
         name: "Miarah Tattoo",
@@ -810,6 +813,7 @@ export var MiarahTattoo = [
 ]
 
 export var MikaelTattoo = [
+    
     {
         img: "images/image-tattoo/category/angels/88eddb6c08db5766da939237dc11a927.jpg",
         name: "Mikael Tattoo",
@@ -932,6 +936,7 @@ export var NimocoStudio = [
 ]
 
 export var nocry = [
+    
     {
         img: "images/image-tattoo/category/eyes/1282721da746836b511910689db43d22.jpg",
         name: "No Cry",
@@ -1213,6 +1218,7 @@ export var TheSigma = [
 ]
 
 export var TiagoTattoo = [
+    
     {
         img: "images/image-tattoo/category/oriental/4174b7a5b926198a4906e125ba39b0b2.jpg",
         name: "Tiago Tattoo",
