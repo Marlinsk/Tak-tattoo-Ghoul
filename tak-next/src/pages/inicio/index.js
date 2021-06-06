@@ -1,15 +1,16 @@
 import Head from 'next/head';
 import React, { useEffect, useRef, useState } from 'react';
-import { feedList } from './feedlist/feedlist.js';
-import { studioList } from './tattoo-studios/tattoofeedlist.js';
 import Link from 'next/link';
-import { localidades } from './places/tattoo-places-v.js';
+
+import { profilephotolist } from '../../data/studios/profilephoto.js';
+import { postlist } from '../../data/feed/feedposts.js';
+import { localidades } from '../../data/places/phototattooplaces.js';
 
 export default function Home() {
-
+    
     var [localidadesList] = useState(Object.keys(localidades));
     var getDropdownlocalidade = useRef(null);
-    var [currentLocalidade, setCurrentLocalidade] = useState('Todos')
+    var [currentLocalidade, setCurrentLocalidade] = useState('Todos');
 
     var containerBox = useRef(null);
     var dropDown = useRef(null);
@@ -136,7 +137,7 @@ export default function Home() {
 
                         <div class="container-box" ref={containerBox} onWheel={(e) => rolagem(e)}>
                             <div class="boxes">
-                                {studioList.map((item, key) => {
+                                {profilephotolist.map((item, key) => {
                                     return (
                                         <div className="boxes" key={key}>
                                             <img id="i-tattoo-studio" className="box" src={item} />
@@ -157,13 +158,13 @@ export default function Home() {
 
                         {currentLocalidade === 'Todos' ?
                             <>
-                                {feedList.map((item, key) => {
+                                {postlist.map((item, key) => {
                                     return (
                                         <div className="img-content" key={key}>
-                                            <img id="i-tattoo" className="img-tattoo" src={item} />
+                                            <img id="i-tattoo" className="img-tattoo" src={item.img} />
                                             <div className="who-posted">
-                                                <foto />
-                                                <p href="">Fulano Studio</p>
+                                                <img className="avatar" src={item.avatar}/>
+                                                <p href="">{item.name}</p>
                                             </div>
                                         </div>
                                     )

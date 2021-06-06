@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { categoryGothic } from './category-tattoo-style-v/tattoo-style-v.js';
-import { categorytattoo } from './category-tattoo-style-v/tattoo-style-v.js';
 import Link from 'next/link';
+
+import { categorytattoo } from '../../data/estilos/categoryfeedlist.js';
 
 export default function Estilos() {
     return (
@@ -73,8 +73,8 @@ export default function Estilos() {
                         {categorytattoo.map((item, key) => {
                             return (
                                 <div className="img-content2" key={key}>
-                                    <img id="i-tattoo2" className="img-tattoo2" src={item} />
-                                    <h3 id="style-name" className="style-name">Estilos</h3>
+                                    <img id="i-tattoo2" className="img-tattoo2" src={item.img} />
+                                    <h3 id="style-name" className="style-name">{item.title}</h3>
                                 </div>
                             )
                         })}
