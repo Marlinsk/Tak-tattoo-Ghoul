@@ -105,7 +105,7 @@
   top: 0px;
   left: 0px;
   z-index: 2000;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -117,4 +117,76 @@
   border: none;
   border-radius: 12px;
   position: relative; 
+}
+
+.close-profile{
+  position: absolute;
+  right: 21px;
+  top: -20px;
+  width: 38px;
+  height: 38px;
+  border: 2.5px solid white;
+  border-radius: 50%;
+  background: #ff0048;
+  color: #ffff;
+  font-family: "Indie Flower", regular;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgb(0,0,0, .2);
+}
+
+.profile-photo{
+  width: 80px;
+  height: 80px;
+  max-width: 272px;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -6%);
+  background-color: #000;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgb(0,0,0, .5);
+}
+
+.profi-name {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-family: "Pattaya";
+  font-size: 30px;
+  color: #000;
+}
+
+/* profile info */
+
+.info-profile {
+  font-size: 14.5px;
+  font-family: 'Bitter';
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: translate(-15%, -30%);
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.data-p {
+  padding-left: 7px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }

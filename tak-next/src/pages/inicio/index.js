@@ -216,20 +216,28 @@ export default function Home() {
 
                 <div className="modal-profile-container">
                     <div className="profile-modal">
-                        <button className="">x</button>
+                        <button className="close-profile">x</button>
                         <form action="">
-                            <div className="">
-
-                            </div>
-                            <div className="">
+                            
+                            <div className="profile-photo">
 
                             </div>
                             <div>
-                                <p className="">Fulano Studio</p>
+                                <p className="profi-name">Fulano Studio</p>
                             </div>
-                            <div>
 
+                            <div className="info-profile">
+                                <div className="bio">
+                                    <h3> Bio: </h3> <p className="data-p"> Lorem ipsum </p>
+                                </div>
+                                <div className="address">
+                                    <h3> Endereço: </h3> <p className="data-p"> Lorem ipsum </p>
+                                </div>
+                                <div className="bio">
+                                    <h3> Contato: </h3> <p className="data-p"> Lorem ipsum </p>
+                                </div>
                             </div>
+                            
                         </form>
                     </div>
                 </div>
