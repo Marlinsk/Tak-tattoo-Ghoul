@@ -260,30 +260,6 @@ export var bhList = [
         avatar: "/images/sketches/category/gothic/3ae7035fb9b42e704d767ff656303619.jpg"
     },
 
-    {
-        img: "images/image-tattoo/category/egyptian/7712971313e244c0f0672824d3acc182.jpg",
-        name: "SolangeTattoo",
-        avatar: "/images/sketches/category/surrealist/4a2e1af8ba7ca1f06453d917f9d6f4aa.jpg"
-    },
-
-    {
-        img: "images/image-tattoo/category/animal/7fb5be3af9a36184ffb9ffa00dae580f.jpg",
-        name: "SolangeTattoo",
-        avatar: "/images/sketches/category/surrealist/4a2e1af8ba7ca1f06453d917f9d6f4aa.jpg"
-    },
-
-    {
-        img: "images/image-tattoo/category/science/e7822106f21e5f4aa967c7bcae41b07e.jpg",
-        name: "SolangeTattoo",
-        avatar: "/images/sketches/category/surrealist/4a2e1af8ba7ca1f06453d917f9d6f4aa.jpg"
-    },
-
-    {
-        img: "images/image-tattoo/category/animal/c2db167d44811080ee5945eb3742048a.jpg",
-        name: "SolangeTattoo",
-        avatar: "/images/sketches/category/surrealist/4a2e1af8ba7ca1f06453d917f9d6f4aa.jpg"
-    }
-
 ];
 
 export var berlimList = [
